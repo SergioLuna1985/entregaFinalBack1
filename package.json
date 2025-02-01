@@ -1,0 +1,19 @@
+{
+  "name": "entrega_final",
+  "version": "1.0.0",
+  "description": "Entrega final del curso de back end de coderhouse primera parte",
+  "main": "app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "author": "Sergio Luna",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2",
+    "express-handlebars": "^8.0.1",
+    "mongoose": "^8.9.5",
+    "socket.io": "^4.8.1"
+  }
+}
