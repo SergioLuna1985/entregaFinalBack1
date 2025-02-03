@@ -1,9 +1,18 @@
 import { Router } from "express";
 
-const router = Router();
+const usersRouters = Router()
 
-router.get('/', (req, res) => {
-    res.send('Hello World');
+const users = []
+
+usersRouters.post('/', (req, res) =>{
+    const user = req.body
+    user.role = 'user'
+    users.push(user)
+    res.send({status: 'ok', message: 'user added'})
 })
 
-export default router;
+usersRouters.get('/', (req, res) =>{
+    res.send({users})
+})
+
+export default usersRouters
